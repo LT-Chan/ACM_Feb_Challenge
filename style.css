@@ -1,0 +1,130 @@
+body {
+  background-color: #F6E3EA;
+  color: #4C4C4C;
+  font-family: Arial, sans-serif;
+  margin: 10px;
+}
+
+h1 {
+  font-size: 36px;
+  text-align: center;
+  margin: 30px 0;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 60%;
+  padding: 20px;
+  background-color: #FDFDFD;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-group {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+label {
+  display: block;
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+input[type="text"], input[type="date"] {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  background-color: #F6E3EA;
+  color: #4C4C4C;
+  margin-top: 5px;
+}
+
+button[type="submit"], button[type="reset"] {
+  display: block;
+  margin-top: 20px;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  background-color: #F67280;
+  color: #FFFFFF;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+button[type="submit"]:hover, button[type="reset"]:hover {
+  background-color: #C06C84;
+}
+
+.error-message {
+  color: #C06C84;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+.success-message {
+  color: #77DD77;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+.container {
+  max-width: 60%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+input[type="text"], input[type="date"], button[type="submit"], button[type="reset"] {
+  width: 100%;
+  max-width: 400px;
+}
+
+.output-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 20px;
+}
+
+.alert-box {
+  display: none;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #000;
+  background-color: #fff;
+}
+
+.text-block {
+  display: none;
+  padding: 10px;
+  border: 1px solid #000;
+  background-color: #fff;
+}
+
+.output-container.show-alert .alert-box {
+  display: block;
+}
+
+.output-container.show-text-block .text-block {
+  display: block;
+}

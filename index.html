@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Love Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <h1>Love Calculator</h1>
+    <form>
+      <label for="name1">Insert a name here:</label>
+      <input type="text" id="name1" name="name1"><br>
+
+      <label for="name2">Insert a second name here:</label>
+      <input type="text" id="name2" name="name2"><br>
+
+      <label for="date1">Enter the birthdate for the first name:</label>
+      <input type="date" id="date1" name="date1"><br>
+
+      <label for="date2">Enter the birthdate for the second name:</label>
+      <input type="date" id="date2" name="date2"><br>
+
+      <button id="loveButton" type="submit">Calculate Love</button>
+	
+      <input type="reset" value="Reset">
+    </form>
+	<div class="output-container">
+    <div class="alert-box"></div>
+    <div class="text-block"></div>
+	</div>
+    <div id="result"></div>
+  </body>
+</html>
